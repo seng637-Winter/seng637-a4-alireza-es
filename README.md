@@ -1,6 +1,6 @@
 # SENG637: Assignment4
 ## Report
-- Read the [assignment report](seng637-a4-15.md)
+- Read the [Assignment Report](seng637-a4-15.md)
 
 ## Source Files
 ### Mutation Testing

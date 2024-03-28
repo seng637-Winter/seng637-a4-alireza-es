@@ -1,6 +1,13 @@
 # seng637-assignment-4
 
-# Guidline
+# Report
+- Read the [assignment report](seng637-a4-15.md)
 
-- read [assignment guideline](seng637-a4.md)
-- commit and push output on **Github** ([assignment report template](./seng637-a4-team_number.md))
+# Source Files
+## Mutation Testing
+- See [DataUtilities Mutation Testing Source File](test-files/DataUtilitiesTest.java)
+- See [Range Mutation Testing Source File](test-files/RangeTest.java)
+
+## GUI and Web Testing
+- See [Selenium Web Testing Source File](test-files/web-test-selenium.side)
+

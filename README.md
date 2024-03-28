@@ -1,4 +1,4 @@
-# seng637-assignment-4
+# SENG637: Assignment4
 ## Report
 - Read the [assignment report](seng637-a4-15.md)
 

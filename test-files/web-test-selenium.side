@@ -1,0 +1,494 @@
+{
+  "id": "9fae7729-939f-4774-a3ce-3ea71dcb91a7",
+  "version": "2.0",
+  "name": "SENG637-Group15",
+  "url": "https://www.leons.ca/",
+  "tests": [{
+    "id": "848970ef-cc2c-49eb-9da2-df2302625c34",
+    "name": "HomePage_Loading",
+    "commands": [{
+      "id": "105ca97d-05ae-4a6f-8b5f-65fd154be62c",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65d2422d-7f30-4625-9bac-5698469717f6",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "//*[@id=\"header-logo\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8097ff7b-4734-452e-9f5a-736638d5b0ce",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"header\"]/div[2]/div/div/div[2]/div/div/ul/li[3]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "766bb39f-4cf3-48f6-af43-c22b63090903",
+    "name": "Navigation_Menu_Click",
+    "commands": [{
+      "id": "7e05f7d0-67d9-498c-93ce-2e9862052529",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "152c609c-1526-4952-aee7-def95e2490f6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.navbar-menu-title-wrapper > img",
+      "targets": [
+        ["css=.navbar-menu-title-wrapper > img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://cdn.shopify.com/s/files/1/2660/5106/files/little_leons_logo_nobackground_EN.svg?width=48')]", "xpath:img"],
+        ["xpath=//a[@id='navbar-little-leons']/span/img", "xpath:idRelative"],
+        ["xpath=//span/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7384305c-b2aa-442b-ba9f-a765d1723419",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navbar-mattresses > .navbar-menu-title-wrapper",
+      "targets": [
+        ["css=#navbar-mattresses > .navbar-menu-title-wrapper", "css:finder"],
+        ["xpath=//a[@id='navbar-mattresses']/span", "xpath:idRelative"],
+        ["xpath=//nav/ul/li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65934ad2-10f0-4a4d-beed-ca0f9fd79788",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"menu-wrapper-mattresses\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af93cde8-9528-4cec-80e1-0cfe61097bd5",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "//*[@id=\"menu-wrapper-mattresses\"]",
+      "targets": [],
+      "value": "1000"
+    }]
+  }, {
+    "id": "f8cd0ab1-88c2-4228-9d70-f2841c6626cd",
+    "name": "Search_Existing_Item",
+    "commands": [{
+      "id": "4c6f4337-74e2-4462-84ea-d9077479d068",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0e950e0-06bb-4302-a216-ad28826c39dd",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db4a7345-68db-4781-9e4c-39517491a709",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sofa"
+    }, {
+      "id": "04538f10-1dec-478e-9299-fea3aebdfd52",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "035ae4c6-4bd3-41dc-9a2a-c411465153b7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"content\"]/div[3]/div[1]/div/div[1]/div[1]/div/span/h2/strong/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "511fd06a-c7c5-4805-a473-949a76816860",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"ais-facets\"]/div[4]/div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a23d19c-ac85-4602-a67a-83ca7c90326d",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"ais-facets\"]/div[4]/div[1]",
+      "targets": [],
+      "value": " CATEGORY"
+    }]
+  }, {
+    "id": "9914ce0c-999e-4932-9661-905f00f68808",
+    "name": "Search_Not_Existing_Item",
+    "commands": [{
+      "id": "62cb4737-38bb-4687-8b6b-bd83b5cd0306",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51e940ca-ab49-4e14-9199-82c310512bfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b475f14e-9f55-4515-82bb-847428a6e0f2",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f60d757-0878-4f7a-b5cc-08b3e83fff3c",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "uranium"
+    }, {
+      "id": "38be4796-04a9-47b6-85f6-6cf6c2c16a36",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.fixed-search .header-top-search", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li/div/form/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0bf1bdcc-5143-4ab1-868d-d3bb31bec8fd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"content\"]/div[2]/div[1]/p[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39c43ff6-d855-4941-ae37-fa5da8f61a65",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"content\"]/div[2]/div[1]/p[1]",
+      "targets": [],
+      "value": "Sorry!"
+    }]
+  }, {
+    "id": "d6439901-3c3e-4ebb-9f1b-981fe2f36d6b",
+    "name": "Login_Invalid_User",
+    "commands": [{
+      "id": "790411e0-1530-4d7a-9282-d6cc493e4cce",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5f8db1a-db8b-40d0-b2fe-d8c4b5f33ac6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign_in_link:nth-child(1)",
+      "targets": [
+        ["css=.sign_in_link:nth-child(1)", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://login.leons.ca?lang=en')])[2]", "xpath:href"],
+        ["xpath=//div/div/div[2]/div/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b13fa4a1-4544-46ff-b086-77038ca65767",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//main[@id='site']/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a@e.com"
+    }, {
+      "id": "e1b60e7d-6167-41ef-913f-85f30122ff6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//main[@id='site']/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "a"
+    }, {
+      "id": "55434dce-aef5-4544-84d6-002655a26513",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full",
+      "targets": [
+        ["css=.w-full", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//main[@id='site']/div[2]/div/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign-in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63d2ecb4-1858-461d-9f50-eb947b29a4dc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"site\"]/div[2]/div/div[2]/section",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c149bb6-cd86-4c16-9504-382c9c7b3e4c",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"site\"]/div[2]/div/div[2]/section/p",
+      "targets": [],
+      "value": "Incorrect username or password."
+    }]
+  }, {
+    "id": "c0aa9569-1387-45c7-8029-69b8d4b32e37",
+    "name": "Login_Unverified_User",
+    "commands": [{
+      "id": "c85ccd84-222b-4cc0-a89d-e3aaafe2d551",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57eb598e-1e04-4ae7-af50-9b9d3b71ae8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sign_in_link > strong",
+      "targets": [
+        ["css=.sign_in_link > strong", "css:finder"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li[3]/a/strong", "xpath:idRelative"],
+        ["xpath=//li[3]/a/strong", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af7d02e-8973-4b00-bf14-7ef8e6ed1eca",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//main[@id='site']/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "a@b.c"
+    }, {
+      "id": "eebd7f9f-0e1d-4738-8e37-0698cb578af7",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//main[@id='site']/div[2]/div/div[2]/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "qwer@1234"
+    }, {
+      "id": "fb72c513-4a75-48ab-8c16-8775a4bf6ca7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-full",
+      "targets": [
+        ["css=.w-full", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//main[@id='site']/div[2]/div/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign-in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45baf323-4c8d-46f5-aade-54676c74b827",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//*[@id=\"site\"]/div[2]/div/div[2]/section",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "533a3d7e-82f1-41b1-b8ed-22d37f02d388",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"site\"]/div[2]/div/div[2]/section/p",
+      "targets": [],
+      "value": "You must verify your account. Please check your email."
+    }]
+  }, {
+    "id": "03cd49b1-d7b5-4e81-82fd-6a452dad5d1c",
+    "name": "Click_Card_Guest_User",
+    "commands": [{
+      "id": "1df8acf9-444f-4d1a-8855-331427a11866",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2db35d88-8b4f-4f83-ab6f-0316f673fa66",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-count",
+      "targets": [
+        ["id=cart-count", "id"],
+        ["css=.btn > #cart-count", "css:finder"],
+        ["xpath=//span[@id='cart-count']", "xpath:attributes"],
+        ["xpath=//header[@id='header']/div[2]/div/div/div[2]/div/div/ul/li[4]/span/button/span", "xpath:idRelative"],
+        ["xpath=//span/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a866221-7ca3-4108-911e-34d894ddce9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-style-checkmark",
+      "targets": [
+        ["css=.list-style-checkmark", "css:finder"],
+        ["xpath=//div[@id='post-code-modal']/div/div/div[2]/div/div[2]/div/ul", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/ul", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd4cb552-73c5-4ad1-bd1c-7026c1ec6e25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-12:nth-child(1) > .vertical-margin-small",
+      "targets": [
+        ["css=.col-md-12:nth-child(1) > .vertical-margin-small", "css:finder"],
+        ["xpath=//div[@id='post-code-modal']/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Please enter your delivery postal code')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aba1d55e-e0e4-48fd-8652-34175682b4d8",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"post-code-modal\"]/div/div/div[1]/div/div[1]/h3/strong",
+      "targets": [],
+      "value": "Please enter your delivery postal code"
+    }]
+  }, {
+    "id": "b7010fd0-1419-4459-86ab-9a7e5e1223c6",
+    "name": "Add_To_Card",
+    "commands": [{
+      "id": "3eb4e342-6cc8-4384-8dda-917e7a6462d4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf26b19d-3914-413a-b245-f1daefee4965",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex-child:nth-child(2) .backgroundImage",
+      "targets": [
+        ["css=.flex-child:nth-child(2) .backgroundImage", "css:finder"],
+        ["xpath=//img[@alt='Dannery Pop-Up Sofa Bed 50% OFF now only $1199']", "xpath:img"],
+        ["xpath=(//img[@type='image/webp'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='main-home-page']/div[5]/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1abe8f1-fea8-4176-b462-f7e972810a30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart_btn-label",
+      "targets": [
+        ["css=.cart_btn-label", "css:finder"],
+        ["xpath=//button[@id='addToCart']/span", "xpath:idRelative"],
+        ["xpath=//form/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85866c0d-73ab-4034-be3b-4bdca8500e3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal-header-close-button-wrapper > .modal-header-close-button",
+      "targets": [
+        ["css=.modal-header-close-button-wrapper > .modal-header-close-button", "css:finder"],
+        ["xpath=//dialog[@id='add_to_cart-popup']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//dialog/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67095342-d950-40d2-bb67-58343fc2cffc",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"cart-count\"]",
+      "targets": [],
+      "value": "1"
+    }]
+  }],
+  "suites": [{
+    "id": "064c165e-0a0d-48ce-959a-73431ccd192e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["848970ef-cc2c-49eb-9da2-df2302625c34"]
+  }],
+  "urls": ["https://www.leons.ca/"],
+  "plugins": []
+}

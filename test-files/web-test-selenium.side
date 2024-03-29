@@ -480,6 +480,238 @@
       "targets": [],
       "value": "1"
     }]
+  }, {
+    "id": "56dbd359-e5a5-4ff1-9d3b-e11f05db383f",
+    "name": "Remove_From_Card",
+    "commands": [{
+      "id": "98c9f59c-f92a-4329-a0e9-d4dc33cb525e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ca36a95-7e69-4f86-bf3a-f3f15b624b1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shopping-cart-button > svg",
+      "targets": [
+        ["css=.shopping-cart-button > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8596dae3-f723-4f78-b05e-fc4c62c1b179",
+      "comment": "",
+      "command": "click",
+      "target": "id=postal-code-confirm",
+      "targets": [
+        ["id=postal-code-confirm", "id"],
+        ["css=#postal-code-confirm", "css:finder"],
+        ["xpath=//button[@id='postal-code-confirm']", "xpath:attributes"],
+        ["xpath=//div[@id='postal-code-button']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac9ec91f-b361-4656-92e9-21c2f6d41128",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove Item",
+      "targets": [
+        ["linkText=Remove Item", "linkText"],
+        ["css=.remove-qty:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove Item')]", "xpath:link"],
+        ["xpath=//div[@id='qty-cell']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[164]", "xpath:href"],
+        ["xpath=//div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1040da6-804f-4241-ae93-eb1815ca8189",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"cart\"]/div[4]/div[2]/div/div/div/h2",
+      "targets": [],
+      "value": "Your cart is currently empty."
+    }]
+  }, {
+    "id": "c03d48d4-b655-42db-8270-db6da805edbd",
+    "name": "Find_Store_Loading",
+    "commands": [{
+      "id": "909c0fa5-f91f-4efd-a5ab-8d8fe7e4bc94",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7126e8a1-804f-4c48-8fee-b2579ebfd0b2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57a014db-7af2-42d2-9c98-d3f3a46c2c3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hed_right > ul > li:nth-child(1) > a",
+      "targets": [
+        ["css=.hed_right > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Find A Store')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div/div/div[2]/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/pages/store-listings')])[3]", "xpath:href"],
+        ["xpath=//div/div/div/div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2071f65d-f3fd-4f6a-b020-7fc0ce83ad3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navbar-save > .navbar-menu-title-wrapper",
+      "targets": [
+        ["css=#navbar-save > .navbar-menu-title-wrapper", "css:finder"],
+        ["xpath=//a[@id='navbar-save']/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d87e4b25-a425-46c6-a9bb-77d294aaad13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clearance",
+      "targets": [
+        ["linkText=Clearance", "linkText"],
+        ["css=.hover > .menu-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Clearance')])[2]", "xpath:link"],
+        ["xpath=//div[@id='menu-wrapper-save']/ul/div/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/collections/clearance')])[2]", "xpath:href"],
+        ["xpath=//div/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1308a809-3531-4f3a-80cb-44847fc40f06",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"content\"]/div[2]/h2",
+      "targets": [],
+      "value": "All Locations"
+    }]
+  }, {
+    "id": "43ab8301-141d-4029-8891-6102b5da3051",
+    "name": "Clearance_Loading",
+    "commands": [{
+      "id": "12da02c8-b12d-48ea-b97a-cef4523a960f",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86ebebc9-e755-4a5d-b6b6-eff2f050ef45",
+      "comment": "",
+      "command": "click",
+      "target": "css=#navbar-save > .navbar-menu-title-wrapper",
+      "targets": [
+        ["css=#navbar-save > .navbar-menu-title-wrapper", "css:finder"],
+        ["xpath=//a[@id='navbar-save']/span", "xpath:idRelative"],
+        ["xpath=//li[7]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81949a5c-01a4-464c-ab72-ca5be1eb1a50",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clearance",
+      "targets": [
+        ["linkText=Clearance", "linkText"],
+        ["css=.hover > .menu-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'Clearance')])[2]", "xpath:link"],
+        ["xpath=//div[@id='menu-wrapper-save']/ul/div/li[6]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/collections/clearance')])[2]", "xpath:href"],
+        ["xpath=//div/li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90ccd97b-a087-49e5-b07c-2ddbab5bed6d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.leons.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6320334-9c33-4377-b995-4c35bc64f397",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"content\"]/div[1]/div/div/h1",
+      "targets": [],
+      "value": "Clearance - Last Chance!"
+    }]
+  }, {
+    "id": "b9e0c350-cd5f-497c-8e13-b095cde99322",
+    "name": "English_Page",
+    "commands": [{
+      "id": "4ad2c4d8-b51f-4e86-8e65-a02223b59645",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a279700a-3fd9-420f-8057-1207b2b52b92",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"divGILanguagePicker\"]/a",
+      "targets": [],
+      "value": "FRANÇAIS"
+    }, {
+      "id": "50245ebd-5264-42c4-96be-3f4e2583a07b",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "//*[@id=\"divGILanguagePicker\"]/a",
+      "targets": [],
+      "value": "ENGLISH"
+    }]
+  }, {
+    "id": "d563b3de-2279-4cce-b5b7-caed83789edd",
+    "name": "France_Page",
+    "commands": [{
+      "id": "473102b4-fe25-4e6d-a6cd-07e66678c68d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b11900d5-2437-4dc9-8d7e-fa622351c591",
+      "comment": "",
+      "command": "click",
+      "target": "css=#divGILanguagePicker > a",
+      "targets": [
+        ["css=#divGILanguagePicker > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Français')]", "xpath:link"],
+        ["xpath=//div[@id='divGILanguagePicker']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://fr.leons.ca')]", "xpath:href"],
+        ["xpath=//li[3]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a49c3ee4-b5c6-44c5-b486-9b402f4f5385",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"divGILanguagePicker\"]/a",
+      "targets": [],
+      "value": "ENGLISH"
+    }, {
+      "id": "29e7a125-5795-4cf7-8ed7-c091d33bdb2b",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "//*[@id=\"divGILanguagePicker\"]/a",
+      "targets": [],
+      "value": "FRANÇAIS"
+    }]
   }],
   "suites": [{
     "id": "064c165e-0a0d-48ce-959a-73431ccd192e",
